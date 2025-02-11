@@ -4,12 +4,12 @@ const User = ({ user }) => {
   const { id, name, email, phone } = user;
   return (
     <div>
-      <div className="card w-96 bg-base-100 card-md shadow-sm">
+      <div className="card w-full bg-sky-50 card-md shadow-sm">
         <div className="card-body">
-          <h2 className="card-title">{id}</h2>
-          <h2 className="card-title">{name}</h2>
-          <p>{email}</p>
-          <p>{phone}</p>
+          <h2 className="text-center text-lg font-semibold">{id}</h2>
+          <h2 className="text-center text-lg font-semibold">{name}</h2>
+          <p className="text-gray-500">{email}</p>
+          <p className="text-gray-500">{phone}</p>
         </div>
       </div>
     </div>
