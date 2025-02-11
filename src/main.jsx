@@ -3,19 +3,23 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home";
+import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-  },
-  {
-    path: "/about",
-    element: <div>I am in the about page</div>,
-  },
-  {
-    path: "/contact",
-    element: <div>call me</div>,
+    children: [
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+    ],
   },
 ]);
 
