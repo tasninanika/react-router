@@ -6,6 +6,9 @@ const Header = () => {
       <span>Practice React Router</span>
       <nav className="my-10">
         <Link to="/">Home</Link>
+        <Link to="/users" className="ms-4">
+          Users
+        </Link>
         <Link to="/about" className="ms-4">
           About
         </Link>
