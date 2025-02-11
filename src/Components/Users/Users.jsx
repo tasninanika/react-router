@@ -7,7 +7,7 @@ const Users = () => {
 
   return (
     <div>
-      <h2>Users</h2>
+      <h2>Users: {users.length}</h2>
     </div>
   );
 };

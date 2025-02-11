@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="text-center">
       <Header></Header>
       <Outlet></Outlet>
       <Footer></Footer>
