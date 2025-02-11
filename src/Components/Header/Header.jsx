@@ -1,17 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="text-center my-20">
       <h2>Navbar</h2>
       <nav>
-        <a href="/" className="">
-          Home
-        </a>
-        <a href="/about" className="ms-4">
-          About
-        </a>
-        <a href="/contact" className="ms-4">
-          Contact Us
-        </a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact Us</Link>
       </nav>
     </div>
   );
