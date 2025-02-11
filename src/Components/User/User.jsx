@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 
 const User = ({ user }) => {
   const { id, name, email, phone } = user;
-
   return (
     <div>
       <div className="card w-96 bg-base-100 card-md shadow-sm">
