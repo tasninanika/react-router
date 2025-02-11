@@ -1,14 +1,13 @@
 const Footer = () => {
   return (
     <div>
-      <p>
-        <small>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-          corporis obcaecati adipisci officiis laborum sed consectetur delectus
-          ea quo nostrum. Officiis obcaecati facere rem? Nam quas eius magnam
-          officiis corporis!
-        </small>
-      </p>
+      <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <aside>
+          <p>
+            Copyright © {new Date().getFullYear()} - All right reserved by Jarin
+          </p>
+        </aside>
+      </footer>
     </div>
   );
 };
