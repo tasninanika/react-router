@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const User = ({ user }) => {
   const { id, name, email, phone } = user;
+  const handleShowDetail = () => {};
   return (
     <div>
       <div className="card w-full bg-sky-50 card-md shadow-sm">
@@ -14,6 +15,7 @@ const User = ({ user }) => {
           <Link to={`/user/${id}`}>
             <button className="btn btn-outline">Show details</button>
           </Link>
+          <button onClick={handleShowDetail}>Click</button>
         </div>
       </div>
     </div>
