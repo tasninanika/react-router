@@ -11,7 +11,9 @@ const User = ({ user }) => {
           <h2 className="text-center text-lg font-semibold">{name}</h2>
           <p className="text-gray-500">{email}</p>
           <p className="text-gray-500">{phone}</p>
-          <Link to={`/user/${id}`}>Show details</Link>
+          <Link to={`/user/${id}`}>
+            <button className="btn btn-outline">Show details</button>
+          </Link>
         </div>
       </div>
     </div>
